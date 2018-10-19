@@ -1,0 +1,108 @@
+<resources>
+    <!-- Global Strings -->
+    <string name="appNameShort">musicDB</string>
+    <string name="appNameComplete">musicDB - my personal music db</string>
+
+    <!-- -->
+    <string name="addAlbum">Add a new album to the database</string>
+    <string name="addSong">Add a new song to the database</string>
+    <string name="addGenre">Add a new genre to the database</string>
+    <string name="addArtist">Add a new artist to the database</string>
+
+    <!-- Menu Strings -->
+    <string name="menuSettings">Settings</string>
+    <string name="menuSearch">Search</string>
+    <string name="menuAlbums">Albums</string>
+    <string name="menuArtists">Artists</string>
+    <string name="menuTracks">Tracks</string>
+    <string name="menuGenres">Genres</string>
+    <string name="menuNewAlbum">New album</string>
+    <string name="menuNewArtist">New artist</string>
+    <string name="menuNewTrack">New track</string>
+    <string name="menuNewGenre">New genre</string>
+
+    <!-- Tile Strings -->
+    <string name="AllTracks">Tracks</string>
+    <string name="AllAlbums">Albums</string>
+    <string name="AllArtists">Artists</string>
+    <string name="AllGenres">Genres</string>
+
+    <!-- Languages -->
+    <string name="language">Language</string>
+    <string-array name="language_names">
+        <item>No language, eg. percussions</item>
+        <item>English</item>
+        <item>French</item>
+        <item>German</item>
+        <item>Portuguese</item>
+        <item>Spanish</item>
+    </string-array>
+
+    <!-- Countries -->
+    <string-array name="country_names">
+        <item>unknown</item>
+        <item>Canada</item>
+        <item>France</item>
+        <item>Germany</item>
+        <item>Italy</item>
+        <item>Sweden</item>
+        <item>Switzerland</item>
+        <item>Ukraine</item>
+        <item>United Kingdom</item>
+        <item>USA</item>
+    </string-array>
+
+    <!-- Music genres -->
+    <string-array name="genres">
+        <item>Classic</item>
+        <item>Country</item>
+        <item>Electro</item>
+        <item>Folklore</item>
+        <item>House</item>
+        <item>Pop</item>
+        <item>Rock</item>
+        <item>Metal</item>
+        <item>Techno</item>
+    </string-array>
+
+    <!-- Artists -->
+    <string-array name="artists">
+        <item>Deborah de Luca</item>
+        <item>Marika Rossa</item>
+        <item>Richie Hawtin</item>
+        <item>Format B</item>
+        <item>Marco Carola</item>
+        <item>Adam Beyer</item>
+        <item>Dense and Pika</item>
+        <item>Josh Wink</item>
+        <item>Monika Kruse</item>
+    </string-array>
+
+    <!-- Album related Labels -->
+    <string name="albumTitle">Title</string>
+    <string name="albumArtist">Artist</string>
+    <string name="albumDescription">Description</string>
+    <string name="albumRelease">Release date</string>
+    <string name="albumCover">Cover image</string>
+    <string name="albumPrice">Price</string>
+    <string name="albumGenre">Genre</string>
+    <string name="albumDuration">Duration</string>
+
+    <!-- Artist related Labels -->
+    <string name="artistName">Name</string>
+    <string name="artistPicture">Picture</string>
+    <string name="artistCountry">Country</string>
+
+    <!-- Song related Labels -->
+    <string name="songTitle">Title</string>
+    <string name="songDuration">Duration</string>
+    <string name="songAlbum">Assign to albums</string>
+
+    <!-- Buttons -->
+    <string name="btnSave">Save</string>
+
+    <!-- Track related Labels -->
+    <string name="trackName">Title</string>
+    <string name="trackDuration">Duration</string>
+    <string name="trackAlbum">Contained in the following albums</string>
+</resources>

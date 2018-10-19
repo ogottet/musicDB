@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".MainActivity">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/holo_blue_bright"
+        android:gravity="fill_vertical|fill_horizontal"
+        android:stretchColumns="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:layout_height="2dip"
+            android:background="@android:color/black" />
+
+        <TableRow
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:background="@android:color/holo_green_light"
+                android:gravity="center_vertical"
+                android:padding="3dip"
+                android:text="@string/AllAlbums"
+                android:textAlignment="center"
+                android:textSize="24dp" />
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="@android:color/black" />
+
+        <TableRow
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:background="@android:color/holo_orange_light"
+                android:gravity="center_vertical"
+                android:padding="3dip"
+                android:text="@string/AllArtists"
+                android:textAlignment="center"
+                android:textSize="24dp" />
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="@android:color/black" />
+
+        <TableRow
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:background="@android:color/holo_blue_light"
+                android:gravity="center_vertical"
+                android:padding="3dip"
+                android:text="@string/AllGenres"
+                android:textAlignment="center"
+                android:textSize="24dp" />
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="@android:color/black" />
+
+        <TableRow
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:background="@android:color/holo_orange_dark"
+                android:gravity="center_vertical"
+                android:padding="3dip"
+                android:text="@string/AllTracks"
+                android:textAlignment="center"
+                android:textSize="24dp" />
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="@android:color/black" />
+    </TableLayout>
+</android.support.constraint.ConstraintLayout>
