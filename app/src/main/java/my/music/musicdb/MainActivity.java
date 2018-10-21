@@ -1,5 +1,6 @@
 package my.music.musicdb;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -7,8 +8,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,29 +22,27 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ActionBar actionBar = getSupportActionBar();
-        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
-        setSupportActionBar(myToolbar);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) { switch(item.getItemId()) {
-        case R.id.add_album:
-            count=(TextView)findViewById(R.id.about);
-            count.setText("Add Album clicked");
-            return(true);
-        case R.id.reset:
-            count=(TextView)findViewById(R.id.always);
-            count.setText("Nothing is selected");
-            return(true);
-        case R.id.about:
-            Toast.makeText(this, R.string.albumGenre, Toast.LENGTH_LONG).show();
-            return(true);
-        case R.id.exit:
-            finish();
-            return(true);
-    }
-        return(super.onOptionsItemSelected(item));
+        TextView tw_albums = (TextView)findViewById(R.id.allAlbums);
+        TextView tw_artists = (TextView)findViewById(R.id.allArtists);
+        TextView tw_songs = (TextView)findViewById(R.id.allSongs);
+        tw_albums.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, AllAlbumsActivity.class));
+            }
+        });
+        tw_artists.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, AllArtistsActivity.class));
+            }
+        });
+        tw_songs.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, AllSongsActivity.class));
+            }
+        });
     }
 
     @Override
@@ -49,4 +52,25 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle item selection
+        Intent intent;
+        switch (item.getItemId()) {
+            case R.id.add_album:
+                intent = new Intent(this, AddAlbumActivity.class);
+                this.startActivity(intent);
+                return true;
+            case R.id.add_artist:
+                intent = new Intent(this, AddArtistActivity.class);
+                this.startActivity(intent);
+                return true;
+            case R.id.add_song:
+                intent = new Intent(this, AddSongActivity.class);
+                this.startActivity(intent);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
 }

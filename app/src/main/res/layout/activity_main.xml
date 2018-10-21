@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/black"
-    tools:context=".MainActivity">
+    tools:context="my.music.musicdb.MainActivity">
 
     <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
@@ -32,6 +32,7 @@
             android:layout_weight="1">
 
             <TextView
+                android:id="@+id/allAlbums"
                 android:layout_height="match_parent"
                 android:layout_column="1"
                 android:background="@android:color/holo_green_light"
@@ -51,6 +52,7 @@
             android:layout_weight="1">
 
             <TextView
+                android:id="@+id/allArtists"
                 android:layout_height="match_parent"
                 android:layout_column="1"
                 android:background="@android:color/holo_orange_light"
@@ -70,6 +72,7 @@
             android:layout_weight="1">
 
             <TextView
+                android:id="@+id/allGenres"
                 android:layout_height="match_parent"
                 android:layout_column="1"
                 android:background="@android:color/holo_blue_light"
@@ -89,12 +92,13 @@
             android:layout_weight="1">
 
             <TextView
+                android:id="@+id/allSongs"
                 android:layout_height="match_parent"
                 android:layout_column="1"
                 android:background="@android:color/holo_orange_dark"
                 android:gravity="center_vertical"
                 android:padding="3dip"
-                android:text="@string/AllTracks"
+                android:text="@string/AllSongs"
                 android:textAlignment="center"
                 android:textSize="24dp" />
         </TableRow>

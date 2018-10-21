@@ -2,10 +2,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
     <item
+        android:id="@+id/go_home" android:icon="@drawable/home" app:showAsAction="always" android:title="@string/menuHome">
+    </item>
+    <item
         android:id="@+id/add_album" android:icon="@drawable/add_album" app:showAsAction="never"   android:title="@string/menuNewAlbum"/>
     <item
         android:id="@+id/add_song" android:icon="@drawable/add_song" app:showAsAction="never" android:title="@string/menuNewSong"/>
-    <item
-        android:id="@+id/add_artist" android:icon="@drawable/add_artist" app:showAsAction="never" android:title="@string/menuNewArtist">
-    </item>
 </menu>

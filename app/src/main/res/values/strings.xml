@@ -10,6 +10,7 @@
     <string name="addArtist">Add a new artist to the database</string>
 
     <!-- Menu Strings -->
+    <string name="menuHome">Home</string>
     <string name="menuSettings">Settings</string>
     <string name="menuSearch">Search</string>
     <string name="menuAlbums">Albums</string>
@@ -18,11 +19,11 @@
     <string name="menuGenres">Genres</string>
     <string name="menuNewAlbum">New album</string>
     <string name="menuNewArtist">New artist</string>
-    <string name="menuNewTrack">New track</string>
+    <string name="menuNewSong">New Song</string>
     <string name="menuNewGenre">New genre</string>
 
     <!-- Tile Strings -->
-    <string name="AllTracks">Tracks</string>
+    <string name="AllSongs">Songs</string>
     <string name="AllAlbums">Albums</string>
     <string name="AllArtists">Artists</string>
     <string name="AllGenres">Genres</string>
@@ -87,16 +88,23 @@
     <string name="albumPrice">Price</string>
     <string name="albumGenre">Genre</string>
     <string name="albumDuration">Duration</string>
+    <string name="listAlbums">Your albums:</string>
+    <string name="albumLabel">Album</string>
 
     <!-- Artist related Labels -->
     <string name="artistName">Name</string>
     <string name="artistPicture">Picture</string>
     <string name="artistCountry">Country</string>
+    <string name="listArtist">Your artists:</string>
 
     <!-- Song related Labels -->
     <string name="songTitle">Title</string>
     <string name="songDuration">Duration</string>
     <string name="songAlbum">Assign to albums</string>
+    <string name="songArtist">Artist</string>
+    <string name="songGenre">Genre</string>
+    <string name="listSongs">Your songs:</string>
+    <string name="songLabel">Song</string>
 
     <!-- Buttons -->
     <string name="btnSave">Save</string>
