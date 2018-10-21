@@ -7,10 +7,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="my.music.musicdb.AllAlbumsActivity">
 
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        android:layout_weight="1">
+
     <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/tableLayout3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
@@ -506,5 +512,7 @@
             android:layout_height="2dip"
             android:background="@android:color/holo_green_light" />
     </TableLayout>
+
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>
