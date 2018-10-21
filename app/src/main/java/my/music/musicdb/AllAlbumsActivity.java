@@ -25,10 +25,15 @@ public class AllAlbumsActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        Intent intent;
         // Handle item selection
         switch (item.getItemId()) {
             case R.id.go_home:
-                Intent intent = new Intent(this, MainActivity.class);
+                intent = new Intent(this, MainActivity.class);
+                this.startActivity(intent);
+                return true;
+            case R.id.add_album:
+                intent = new Intent(this, AddAlbumActivity.class);
                 this.startActivity(intent);
                 return true;
             default:

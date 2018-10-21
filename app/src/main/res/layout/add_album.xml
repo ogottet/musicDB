@@ -166,7 +166,6 @@
                 android:layout_span="6"
                 android:layout_margin="6dp"
                 android:padding="3dp"
-                android:theme="@style/Base.ThemeOverlay.AppCompat.Dark"
                 android:background="@drawable/edit_text_background"
                 android:entries="@array/language_names" />
 
@@ -196,8 +195,7 @@
                 android:layout_span="5"
                 android:background="@drawable/edit_text_background"
                 android:entries="@array/artists"
-                android:padding="3dp"
-                android:theme="@style/Base.ThemeOverlay.AppCompat.Dark" />
+                android:padding="3dp" />
 
             <Button
                 android:id="@+id/albumAddArtist"
@@ -229,7 +227,6 @@
                 android:layout_span="6"
                 android:layout_margin="6dp"
                 android:padding="3dp"
-                android:theme="@style/Base.ThemeOverlay.AppCompat.Dark"
                 android:background="@drawable/edit_text_background"
                 android:entries="@array/genres" />
 

@@ -24,19 +24,23 @@
             </intent-filter>
         </activity>
         <activity android:name=".AllAlbumsActivity"
-            android:label="@string/title_albums">
+            android:label="@string/title_albums"
+            android:parentActivityName=".MainActivity">
 
         </activity>
         <activity android:name=".AllArtistsActivity"
-            android:label="@string/title_artists">
+            android:label="@string/title_artists"
+            android:parentActivityName=".MainActivity">
 
         </activity>
         <activity android:name=".AllSongsActivity"
-            android:label="@string/title_songs">
+            android:label="@string/title_songs"
+            android:parentActivityName=".MainActivity">
 
         </activity>
         <activity android:name=".AllGenresActivity"
-            android:label="@string/title_genre_selector">
+            android:label="@string/title_genre_selector"
+            android:parentActivityName=".MainActivity">
 
         </activity>
         <activity android:name=".AddAlbumActivity"
