@@ -16,9 +16,9 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:background="@android:color/black"
+        android:background="@color/Albums"
         android:gravity="fill_vertical|fill_horizontal"
-        android:stretchColumns="1"
+        android:stretchColumns="*"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -26,189 +26,217 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
-        <TableRow>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_column="1"
-                android:gravity="center_vertical"
-                android:padding="3dip"
-                android:text="@string/title_add_album"
-                android:textAlignment="center"
-                android:textColor="@android:color/holo_green_light"
-                android:textSize="20dp" />
-        </TableRow>
-    </TableLayout>
-
-    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="80dp"
-        android:background="@android:color/holo_green_light"
-        android:gravity="center_horizontal"
-        android:stretchColumns="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <View
-            android:layout_height="2dip"
-            android:background="@android:color/black" />
-
-        <TableRow android:layout_weight="1">
+        <TableRow android:layout_weight="1"
+            android:gravity="center">
 
             <TextView
                 android:id="@+id/l_edit_title"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
+                android:layout_span="4"
                 android:text="@string/albumTitle"
-                android:textAlignment="textEnd" />
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/black" />
 
             <EditText
                 android:id="@+id/tf_edit_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_span="6"
+                android:layout_margin="6dp"
+                android:padding="3dp"
+                android:background="@drawable/edit_text_background"
                 android:ems="10"
-                android:inputType="text" />
+                android:inputType="text"
+                android:textColor="@android:color/black" />
 
         </TableRow>
 
         <View
             android:layout_height="2dip"
-            android:background="@android:color/black" />
+            android:background="@color/Albums" />
 
-        <TableRow android:layout_weight="1">
+        <TableRow android:layout_weight="1"
+            android:gravity="center">
 
             <TextView
                 android:id="@+id/l_edit_release"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
+                android:layout_span="4"
                 android:text="@string/albumRelease"
-                android:textAlignment="textEnd" />
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/black" />
 
             <EditText
                 android:id="@+id/tf_edit_release"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_span="6"
+                android:layout_margin="6dp"
+                android:padding="3dp"
+                android:background="@drawable/edit_text_background"
                 android:ems="10"
-                android:inputType="date" />
+                android:inputType="date"
+                android:textColor="@android:color/black" />
 
         </TableRow>
 
         <View
             android:layout_height="2dip"
-            android:background="@android:color/black" />
+            android:background="@color/Albums" />
 
-        <TableRow android:layout_weight="1">
+        <TableRow android:layout_weight="1"
+            android:gravity="center">
 
             <TextView
                 android:id="@+id/l_edit_cover"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
+                android:layout_span="4"
                 android:text="@string/albumCover"
-                android:textAlignment="textEnd" />
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/black" />
 
             <EditText
                 android:id="@+id/tf_edit_cover"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_span="6"
+                android:layout_margin="6dp"
+                android:padding="3dp"
+                android:background="@drawable/edit_text_background"
                 android:ems="10"
-                android:inputType="text" />
+                android:inputType="text"
+                android:textColor="@android:color/black" />
 
         </TableRow>
 
         <View
             android:layout_height="2dip"
-            android:background="@android:color/black" />
+            android:background="@color/Albums" />
 
-        <TableRow android:layout_weight="1">
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center">
 
             <TextView
                 android:id="@+id/l_edit_price"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
+                android:layout_span="4"
                 android:text="@string/albumPrice"
-                android:textAlignment="textEnd" />
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/black" />
 
             <EditText
                 android:id="@+id/tf_edit_price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:layout_span="6"
+                android:background="@drawable/edit_text_background"
                 android:ems="10"
-                android:inputType="numberDecimal" />
+                android:inputType="numberDecimal"
+                android:padding="3dp"
+                android:textColor="@android:color/black" />
 
         </TableRow>
 
         <View
             android:layout_height="2dip"
-            android:background="@android:color/black" />
+            android:background="@color/Albums" />
 
-        <TableRow android:layout_weight="1">
+        <TableRow android:layout_weight="1"
+            android:gravity="center">
 
             <TextView
                 android:id="@+id/l_edit_language"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
+                android:layout_span="4"
                 android:text="@string/language"
-                android:textAlignment="textEnd" />
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/black" />
 
             <Spinner
                 android:id="@+id/s_language"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_span="6"
+                android:layout_margin="6dp"
+                android:padding="3dp"
+                android:theme="@style/Base.ThemeOverlay.AppCompat.Dark"
+                android:background="@drawable/edit_text_background"
                 android:entries="@array/language_names" />
 
         </TableRow>
 
         <View
             android:layout_height="2dip"
-            android:background="@android:color/black" />
+            android:background="@color/Albums" />
 
-        <TableRow android:layout_weight="1">
+        <TableRow android:layout_weight="1"
+            android:gravity="center">
 
             <TextView
                 android:id="@+id/l_edit_artist"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
+                android:layout_span="4"
                 android:text="@string/albumArtist"
-                android:textAlignment="textEnd" />
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/black" />
 
             <Spinner
                 android:id="@+id/s_artist"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:entries="@array/artists" />
+                android:layout_margin="6dp"
+                android:layout_span="5"
+                android:background="@drawable/edit_text_background"
+                android:entries="@array/artists"
+                android:padding="3dp"
+                android:theme="@style/Base.ThemeOverlay.AppCompat.Dark" />
+
+            <Button
+                android:id="@+id/albumAddArtist"
+                android:layout_span="1"
+                android:text="+" />
 
         </TableRow>
 
         <View
             android:layout_height="2dip"
-            android:background="@android:color/black" />
+            android:background="@color/Albums" />
 
-        <TableRow android:layout_weight="1">
+        <TableRow android:layout_weight="1"
+            android:gravity="center">
 
             <TextView
                 android:id="@+id/l_edit_genre"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
+                android:layout_span="4"
                 android:text="@string/albumGenre"
-                android:textAlignment="textEnd" />
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/black" />
 
             <Spinner
                 android:id="@+id/s_genre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_span="6"
+                android:layout_margin="6dp"
+                android:padding="3dp"
+                android:theme="@style/Base.ThemeOverlay.AppCompat.Dark"
+                android:background="@drawable/edit_text_background"
                 android:entries="@array/genres" />
 
         </TableRow>
 
-        <TableRow>
+        <TableRow android:layout_weight="1"
+            android:gravity="center">
 
             <Button
                 android:id="@+id/button"
@@ -216,13 +244,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:layout_marginTop="8dp"
-                android:layout_span="2"
+                android:layout_span="10"
                 android:text="@string/btnSave" />
         </TableRow>
 
         <View
             android:layout_height="2dip"
-            android:background="@android:color/black" />
+            android:background="@color/Albums" />
     </TableLayout>
 
 </android.support.constraint.ConstraintLayout>

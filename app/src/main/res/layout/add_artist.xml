@@ -5,41 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/black"
-    tools:context="my.music.musicdb.MainActivity.Artists.Add">
-
-    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/tableLayout3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="8dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:background="@android:color/black"
-        android:gravity="fill_vertical|fill_horizontal"
-        android:stretchColumns="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-
-        <TableRow>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_column="1"
-                android:gravity="center_vertical"
-                android:padding="3dip"
-                android:text="@string/title_add_artist"
-                android:textAlignment="center"
-                android:textColor="@android:color/holo_orange_light"
-                android:textSize="20dp" />
-        </TableRow>
-    </TableLayout>
+    tools:context="my.music.musicdb.AddArtistActivity">
 
     <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
@@ -92,13 +58,27 @@
                 android:text="@string/artistPicture"
                 android:textAlignment="textEnd" />
 
-            <EditText
-                android:id="@+id/tf_edit_release"
+            <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="date" />
+                android:id="@+id/btn"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/btnImage" />
 
+        </TableRow>
+
+        <TableRow>
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_span="2"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/iv"/>
         </TableRow>
 
         <View

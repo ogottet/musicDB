@@ -11,4 +11,5 @@
     <color name="Artists2">#f57f17</color>
     <color name="Albums">#8bc34a</color>
     <color name="Albums2">#6f9c3a</color>
+    <color name="borderColor">#FFF2F2F2</color>
 </resources>

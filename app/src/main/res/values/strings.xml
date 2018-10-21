@@ -113,6 +113,7 @@
 
     <!-- Buttons -->
     <string name="btnSave">Save</string>
+    <string name="btnImage">Choose image</string>
 
     <!-- Track related Labels -->
     <string name="trackName">Title</string>

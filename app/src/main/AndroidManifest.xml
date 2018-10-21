@@ -3,6 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="my.music.musicdb">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,6 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,10 +47,14 @@
             android:label="@string/title_add_artist">
 
         </activity>
+        <activity android:name=".AddArtistActivityFromAlbum"
+            android:label="@string/title_add_artist"
+            android:parentActivityName=".AddAlbumActivity">
+
+        </activity>
         <activity android:name=".AddSongActivity"
             android:label="@string/title_add_song">
 
         </activity>
     </application>
-
 </manifest>

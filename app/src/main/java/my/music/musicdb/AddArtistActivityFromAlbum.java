@@ -5,30 +5,21 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
-public class AddAlbumActivity extends AppCompatActivity {
+public class AddArtistActivityFromAlbum extends AppCompatActivity {
 
     TextView count;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.add_album);
-        Button btn_add_artist = (Button)findViewById(R.id.albumAddArtist);
-        btn_add_artist.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(AddAlbumActivity.this, AddArtistActivityFromAlbum.class));
-            }
-        });
+        setContentView(R.layout.add_artist);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_album, menu);
+        getMenuInflater().inflate(R.menu.menu_artist, menu);
         return true;
     }
 
