@@ -2,7 +2,7 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_green_light"
+    android:background="@color/Albums"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="my.music.musicdb.AllAlbumsActivity">
@@ -20,7 +20,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@android:color/holo_green_light"
+        android:background="@color/Albums"
         android:stretchColumns="*"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,7 +45,7 @@
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@android:color/holo_green_light" />
+            android:background="@color/Albums" />
 
         <TableRow
             android:layout_width="match_parent"
@@ -60,7 +60,7 @@
                 android:layout_span="3"
                 android:text="@string/songArtist"
                 android:textAlignment="viewEnd"
-                android:textColor="@android:color/holo_green_light" />
+                android:textColor="@color/Albums" />
 
             <TextView
                 android:id="@+id/l_album_title"
@@ -70,11 +70,11 @@
                 android:layout_span="7"
                 android:text="@string/songTitle"
                 android:textAlignment="viewStart"
-                android:textColor="@android:color/holo_green_light" />
+                android:textColor="@color/Albums" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@android:color/holo_green_light" />
+            android:background="@color/Albums" />
 
         <TableRow
             android:layout_width="match_parent"
@@ -86,7 +86,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="3"
-                android:background="@android:color/holo_green_dark"
+                android:background="@color/Albums2"
                 android:text="@string/dummy"
                 android:textAlignment="viewEnd"
                 android:textColor="@android:color/black" />
@@ -96,7 +96,7 @@
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
                 android:layout_span="7"
-                android:background="@android:color/holo_green_dark"
+                android:background="@color/Albums2"
                 android:text="@string/dummy"
                 android:textAlignment="viewStart"
                 android:textColor="@android:color/black" />
@@ -104,7 +104,7 @@
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@android:color/holo_green_light" />
+            android:background="@color/Albums" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -115,7 +115,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="3"
-                android:background="@android:color/holo_green_dark"
+                android:background="@color/Albums2"
                 android:text="@string/dummy"
                 android:textAlignment="viewEnd"
                 android:textColor="@android:color/black" />
@@ -125,7 +125,7 @@
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
                 android:layout_span="7"
-                android:background="@android:color/holo_green_dark"
+                android:background="@color/Albums2"
                 android:text="@string/dummy"
                 android:textAlignment="viewStart"
                 android:textColor="@android:color/black" />
@@ -133,7 +133,7 @@
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@android:color/holo_green_light" />
+            android:background="@color/Albums" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -144,7 +144,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="3"
-                android:background="@android:color/holo_green_dark"
+                android:background="@color/Albums2"
                 android:text="@string/dummy"
                 android:textAlignment="viewEnd"
                 android:textColor="@android:color/black" />
@@ -154,7 +154,7 @@
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
                 android:layout_span="7"
-                android:background="@android:color/holo_green_dark"
+                android:background="@color/Albums2"
                 android:text="@string/dummy"
                 android:textAlignment="viewStart"
                 android:textColor="@android:color/black" />
@@ -162,7 +162,7 @@
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@android:color/holo_green_light" />
+            android:background="@color/Albums" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -173,7 +173,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="3"
-                android:background="@android:color/holo_green_dark"
+                android:background="@color/Albums2"
                 android:text="@string/dummy"
                 android:textAlignment="viewEnd"
                 android:textColor="@android:color/black" />
@@ -183,7 +183,7 @@
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
                 android:layout_span="7"
-                android:background="@android:color/holo_green_dark"
+                android:background="@color/Albums2"
                 android:text="@string/dummy"
                 android:textAlignment="viewStart"
                 android:textColor="@android:color/black" />
@@ -191,7 +191,7 @@
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@android:color/holo_green_light" />
+            android:background="@color/Albums" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -202,7 +202,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="3"
-                android:background="@android:color/holo_green_dark"
+                android:background="@color/Albums2"
                 android:text="@string/dummy"
                 android:textAlignment="viewEnd"
                 android:textColor="@android:color/black" />
@@ -212,7 +212,7 @@
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
                 android:layout_span="7"
-                android:background="@android:color/holo_green_dark"
+                android:background="@color/Albums2"
                 android:text="@string/dummy"
                 android:textAlignment="viewStart"
                 android:textColor="@android:color/black" />
@@ -220,7 +220,7 @@
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@android:color/holo_green_light" />
+            android:background="@color/Albums" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -231,7 +231,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="3"
-                android:background="@android:color/holo_green_dark"
+                android:background="@color/Albums2"
                 android:text="@string/dummy"
                 android:textAlignment="viewEnd"
                 android:textColor="@android:color/black" />
@@ -241,7 +241,7 @@
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
                 android:layout_span="7"
-                android:background="@android:color/holo_green_dark"
+                android:background="@color/Albums2"
                 android:text="@string/dummy"
                 android:textAlignment="viewStart"
                 android:textColor="@android:color/black" />
@@ -249,7 +249,7 @@
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@android:color/holo_green_light" />
+            android:background="@color/Albums" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -260,7 +260,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="3"
-                android:background="@android:color/holo_green_dark"
+                android:background="@color/Albums2"
                 android:text="@string/dummy"
                 android:textAlignment="viewEnd"
                 android:textColor="@android:color/black" />
@@ -270,7 +270,7 @@
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
                 android:layout_span="7"
-                android:background="@android:color/holo_green_dark"
+                android:background="@color/Albums2"
                 android:text="@string/dummy"
                 android:textAlignment="viewStart"
                 android:textColor="@android:color/black" />
@@ -278,7 +278,7 @@
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@android:color/holo_green_light" />
+            android:background="@color/Albums" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -289,7 +289,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="3"
-                android:background="@android:color/holo_green_dark"
+                android:background="@color/Albums2"
                 android:text="@string/dummy"
                 android:textAlignment="viewEnd"
                 android:textColor="@android:color/black" />
@@ -299,7 +299,7 @@
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
                 android:layout_span="7"
-                android:background="@android:color/holo_green_dark"
+                android:background="@color/Albums2"
                 android:text="@string/dummy"
                 android:textAlignment="viewStart"
                 android:textColor="@android:color/black" />
@@ -307,7 +307,7 @@
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@android:color/holo_green_light" />
+            android:background="@color/Albums" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -318,7 +318,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="3"
-                android:background="@android:color/holo_green_dark"
+                android:background="@color/Albums2"
                 android:text="@string/dummy"
                 android:textAlignment="viewEnd"
                 android:textColor="@android:color/black" />
@@ -328,7 +328,7 @@
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
                 android:layout_span="7"
-                android:background="@android:color/holo_green_dark"
+                android:background="@color/Albums2"
                 android:text="@string/dummy"
                 android:textAlignment="viewStart"
                 android:textColor="@android:color/black" />
@@ -336,7 +336,7 @@
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@android:color/holo_green_light" />
+            android:background="@color/Albums" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -347,7 +347,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="3"
-                android:background="@android:color/holo_green_dark"
+                android:background="@color/Albums2"
                 android:text="@string/dummy"
                 android:textAlignment="viewEnd"
                 android:textColor="@android:color/black" />
@@ -357,7 +357,7 @@
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
                 android:layout_span="7"
-                android:background="@android:color/holo_green_dark"
+                android:background="@color/Albums2"
                 android:text="@string/dummy"
                 android:textAlignment="viewStart"
                 android:textColor="@android:color/black" />
@@ -365,7 +365,7 @@
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@android:color/holo_green_light" />
+            android:background="@color/Albums" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -376,7 +376,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="3"
-                android:background="@android:color/holo_green_dark"
+                android:background="@color/Albums2"
                 android:text="@string/dummy"
                 android:textAlignment="viewEnd"
                 android:textColor="@android:color/black" />
@@ -386,7 +386,7 @@
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
                 android:layout_span="7"
-                android:background="@android:color/holo_green_dark"
+                android:background="@color/Albums2"
                 android:text="@string/dummy"
                 android:textAlignment="viewStart"
                 android:textColor="@android:color/black" />
@@ -394,7 +394,7 @@
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@android:color/holo_green_light" />
+            android:background="@color/Albums" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -405,7 +405,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="3"
-                android:background="@android:color/holo_green_dark"
+                android:background="@color/Albums2"
                 android:text="@string/dummy"
                 android:textAlignment="viewEnd"
                 android:textColor="@android:color/black" />
@@ -415,7 +415,7 @@
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
                 android:layout_span="7"
-                android:background="@android:color/holo_green_dark"
+                android:background="@color/Albums2"
                 android:text="@string/dummy"
                 android:textAlignment="viewStart"
                 android:textColor="@android:color/black" />
@@ -423,7 +423,7 @@
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@android:color/holo_green_light" />
+            android:background="@color/Albums" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -434,7 +434,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="3"
-                android:background="@android:color/holo_green_dark"
+                android:background="@color/Albums2"
                 android:text="@string/dummy"
                 android:textAlignment="viewEnd"
                 android:textColor="@android:color/black" />
@@ -444,7 +444,7 @@
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
                 android:layout_span="7"
-                android:background="@android:color/holo_green_dark"
+                android:background="@color/Albums2"
                 android:text="@string/dummy"
                 android:textAlignment="viewStart"
                 android:textColor="@android:color/black" />
@@ -452,7 +452,7 @@
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@android:color/holo_green_light" />
+            android:background="@color/Albums" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -463,7 +463,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="3"
-                android:background="@android:color/holo_green_dark"
+                android:background="@color/Albums2"
                 android:text="@string/dummy"
                 android:textAlignment="viewEnd"
                 android:textColor="@android:color/black" />
@@ -473,7 +473,7 @@
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
                 android:layout_span="7"
-                android:background="@android:color/holo_green_dark"
+                android:background="@color/Albums2"
                 android:text="@string/dummy"
                 android:textAlignment="viewStart"
                 android:textColor="@android:color/black" />
@@ -481,7 +481,7 @@
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@android:color/holo_green_light" />
+            android:background="@color/Albums" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -492,7 +492,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="3"
-                android:background="@android:color/holo_green_dark"
+                android:background="@color/Albums2"
                 android:text="@string/dummy"
                 android:textAlignment="viewEnd"
                 android:textColor="@android:color/black" />
@@ -502,7 +502,7 @@
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
                 android:layout_span="7"
-                android:background="@android:color/holo_green_dark"
+                android:background="@color/Albums2"
                 android:text="@string/dummy"
                 android:textAlignment="viewStart"
                 android:textColor="@android:color/black" />
@@ -510,7 +510,7 @@
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@android:color/holo_green_light" />
+            android:background="@color/Albums" />
     </TableLayout>
 
     </ScrollView>

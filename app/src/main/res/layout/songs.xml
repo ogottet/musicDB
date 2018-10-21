@@ -1,100 +1,549 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="my.music.musicdb.MainActivity.Songs">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Songs2"
+    tools:context="my.music.musicdb.AllAlbumsActivity">
 
-    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/tableLayout3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="8dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:background="@android:color/holo_orange_dark"
-        android:gravity="fill_vertical|fill_horizontal"
-        android:stretchColumns="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:scrollbars="none">
 
-        <TableRow>
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/tableLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@color/Songs"
+            android:stretchColumns="*"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
 
-            <TextView
+            <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_column="1"
-                android:gravity="center_vertical"
-                android:padding="3dip"
-                android:text="@string/listSongs"
-                android:textAlignment="center"
-                android:textColor="@android:color/black"
-                android:textSize="20dp" />
-        </TableRow>
-    </TableLayout>
+                android:layout_height="wrap_content">
 
-    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="80dp"
-        android:background="@android:color/black"
-        android:gravity="center_horizontal"
-        android:stretchColumns="*"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="10"
+                    android:gravity="center_vertical"
+                    android:text="@string/listSongs"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp" />
+            </TableRow>
 
-        <View
-            android:layout_height="2dip"
-            android:background="@android:color/black" />
+            <View
+                android:layout_height="2dip"
+                android:background="@color/Songs" />
 
-        <TableRow>
-
-            <TextView
-                android:id="@+id/l_songs_artist"
+            <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_span="3"
-                android:text="@string/songArtist"
-                android:textAlignment="center"
-                android:textColor="@android:color/holo_orange_dark" />
+                android:background="@android:color/black">
 
-            <TextView
-                android:id="@+id/l_songs_title"
+                <TextView
+                    android:id="@+id/l_album_artist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_span="3"
+                    android:text="@string/songArtist"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/Songs" />
+
+                <TextView
+                    android:id="@+id/l_album_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_span="7"
+                    android:text="@string/songLabel"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/Songs" />
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="@color/Songs" />
+
+            <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_span="4"
-                android:text="@string/songTitle"
-                android:textAlignment="center"
-                android:textColor="@android:color/holo_orange_dark" />
+                android:background="@android:color/black">
 
-            <TextView
-                android:id="@+id/l_songs_genre"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_span="3"
+                    android:background="@color/Songs2"
+                    android:text="@string/dummy"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_span="7"
+                    android:background="@color/Songs2"
+                    android:text="@string/dummy"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/black" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="@color/Songs" />
+
+            <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_span="3"
-                android:text="@string/songGenre"
-                android:textAlignment="center"
-                android:textColor="@android:color/holo_orange_dark" />
+                android:background="@android:color/black">
 
-        </TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_span="3"
+                    android:background="@color/Songs2"
+                    android:text="@string/dummy"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@android:color/black" />
 
-        <View
-            android:layout_height="2dip"
-            android:background="@android:color/black" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_span="7"
+                    android:background="@color/Songs2"
+                    android:text="@string/dummy"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/black" />
 
-    </TableLayout>
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="@color/Songs" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/black">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_span="3"
+                    android:background="@color/Songs2"
+                    android:text="@string/dummy"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_span="7"
+                    android:background="@color/Songs2"
+                    android:text="@string/dummy"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/black" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="@color/Songs" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/black">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_span="3"
+                    android:background="@color/Songs2"
+                    android:text="@string/dummy"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_span="7"
+                    android:background="@color/Songs2"
+                    android:text="@string/dummy"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/black" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="@color/Songs" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/black">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_span="3"
+                    android:background="@color/Songs2"
+                    android:text="@string/dummy"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_span="7"
+                    android:background="@color/Songs2"
+                    android:text="@string/dummy"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/black" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="@color/Songs" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/black">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_span="3"
+                    android:background="@color/Songs2"
+                    android:text="@string/dummy"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_span="7"
+                    android:background="@color/Songs2"
+                    android:text="@string/dummy"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/black" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="@color/Songs" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/black">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_span="3"
+                    android:background="@color/Songs2"
+                    android:text="@string/dummy"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_span="7"
+                    android:background="@color/Songs2"
+                    android:text="@string/dummy"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/black" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="@color/Songs" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/black">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_span="3"
+                    android:background="@color/Songs2"
+                    android:text="@string/dummy"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_span="7"
+                    android:background="@color/Songs2"
+                    android:text="@string/dummy"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/black" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="@color/Songs" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/black">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_span="3"
+                    android:background="@color/Songs2"
+                    android:text="@string/dummy"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_span="7"
+                    android:background="@color/Songs2"
+                    android:text="@string/dummy"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/black" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="@color/Songs" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/black">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_span="3"
+                    android:background="@color/Songs2"
+                    android:text="@string/dummy"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_span="7"
+                    android:background="@color/Songs2"
+                    android:text="@string/dummy"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/black" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="@color/Songs" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/black">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_span="3"
+                    android:background="@color/Songs2"
+                    android:text="@string/dummy"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_span="7"
+                    android:background="@color/Songs2"
+                    android:text="@string/dummy"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/black" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="@color/Songs" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/black">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_span="3"
+                    android:background="@color/Songs2"
+                    android:text="@string/dummy"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_span="7"
+                    android:background="@color/Songs2"
+                    android:text="@string/dummy"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/black" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="@color/Songs" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/black">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_span="3"
+                    android:background="@color/Songs2"
+                    android:text="@string/dummy"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_span="7"
+                    android:background="@color/Songs2"
+                    android:text="@string/dummy"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/black" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="@color/Songs" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/black">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_span="3"
+                    android:background="@color/Songs2"
+                    android:text="@string/dummy"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_span="7"
+                    android:background="@color/Songs2"
+                    android:text="@string/dummy"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/black" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="@color/Songs" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/black">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_span="3"
+                    android:background="@color/Songs2"
+                    android:text="@string/dummy"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_span="7"
+                    android:background="@color/Songs2"
+                    android:text="@string/dummy"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/black" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="@color/Songs" />
+        </TableLayout>
+
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>
