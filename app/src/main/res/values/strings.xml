@@ -113,4 +113,7 @@
     <string name="trackName">Title</string>
     <string name="trackDuration">Duration</string>
     <string name="trackAlbum">Contained in the following albums</string>
+
+    <!-- Lorem -->
+    <string name="dummy">Lorem ipsum dolor sit amet</string>
 </resources>
