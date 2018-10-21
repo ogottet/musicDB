@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/add_album" android:icon="@drawable/add_album" app:showAsAction="never" android:title="@string/menuNewAlbum"/>
+        android:id="@+id/go_home" android:icon="@drawable/home" app:showAsAction="always" android:title="@string/menuNewAlbum"/>
     <item
         android:id="@+id/add_song" android:icon="@drawable/add_song" app:showAsAction="never" android:title="@string/menuNewSong"/>
     <item

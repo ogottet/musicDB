@@ -5,51 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/black"
-    tools:context="my.music.musicdb.MainActivity.Songs.Add">
-
-    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/tableLayout3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="8dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:background="@android:color/black"
-        android:gravity="fill_vertical|fill_horizontal"
-        android:stretchColumns="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-
-        <TableRow>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_column="1"
-                android:gravity="center_vertical"
-                android:padding="3dip"
-                android:text="@string/title_add_song"
-                android:textAlignment="center"
-                android:textColor="@android:color/holo_orange_dark"
-                android:textSize="20dp" />
-        </TableRow>
-    </TableLayout>
+    tools:context="my.music.musicdb.AddSongActivity">
 
     <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_margin="8dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="80dp"
-        android:background="@android:color/holo_orange_dark"
+        android:background="@color/Songs"
         android:gravity="center_horizontal"
         android:stretchColumns="1"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -57,16 +23,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <View
-            android:layout_height="2dip"
-            android:background="@android:color/black" />
-
         <TableRow android:layout_weight="1">
 
             <TextView
                 android:id="@+id/l_edit_name"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:padding="3dp"
                 android:text="@string/songTitle"
                 android:textAlignment="textEnd" />
 
@@ -74,21 +38,21 @@
                 android:id="@+id/tf_edit_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:layout_margin="6dp"
+                android:padding="3dp"
                 android:ems="10"
                 android:inputType="text" />
 
         </TableRow>
-
-        <View
-            android:layout_height="2dip"
-            android:background="@android:color/black" />
-
         <TableRow android:layout_weight="1">
 
             <TextView
                 android:id="@+id/l_edit_release"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:padding="3dp"
                 android:text="@string/songDuration"
                 android:textAlignment="textEnd" />
 
@@ -96,21 +60,21 @@
                 android:id="@+id/tf_edit_release"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:layout_margin="6dp"
+                android:padding="3dp"
                 android:ems="10"
                 android:inputType="time" />
 
         </TableRow>
-
-        <View
-            android:layout_height="2dip"
-            android:background="@android:color/black" />
-
         <TableRow android:layout_weight="1">
 
             <TextView
                 android:id="@+id/l_edit_language"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:padding="3dp"
                 android:text="@string/songAlbum"
                 android:textAlignment="textEnd" />
 
@@ -118,14 +82,12 @@
                 android:id="@+id/s_language"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:layout_margin="6dp"
+                android:padding="3dp"
                 android:entries="@array/country_names" />
 
         </TableRow>
-
-        <View
-            android:layout_height="2dip"
-            android:background="@android:color/black" />
-
         <TableRow>
 
             <Button
@@ -137,10 +99,6 @@
                 android:layout_span="2"
                 android:text="@string/btnSave" />
         </TableRow>
-
-        <View
-            android:layout_height="2dip"
-            android:background="@android:color/black" />
     </TableLayout>
 
 </android.support.constraint.ConstraintLayout>

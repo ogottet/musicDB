@@ -28,16 +28,29 @@ public class AddAlbumActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_home, menu);
+        getMenuInflater().inflate(R.menu.menu_add_album, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle item selection
+        Intent intent;
         switch (item.getItemId()) {
             case R.id.go_home:
-                Intent intent = new Intent(this, MainActivity.class);
+                intent = new Intent(this, MainActivity.class);
+                this.startActivity(intent);
+                return true;
+            case R.id.add_album:
+                intent = new Intent(this, AddAlbumActivity.class);
+                this.startActivity(intent);
+                return true;
+            case R.id.add_artist:
+                intent = new Intent(this, AddArtistActivity.class);
+                this.startActivity(intent);
+                return true;
+            case R.id.add_song:
+                intent = new Intent(this, AddSongActivity.class);
                 this.startActivity(intent);
                 return true;
             default:
