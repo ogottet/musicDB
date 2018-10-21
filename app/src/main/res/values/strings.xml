@@ -3,11 +3,15 @@
     <string name="appNameShort">musicDB</string>
     <string name="appNameComplete">musicDB - my personal music db</string>
 
-    <!-- -->
-    <string name="addAlbum">Add a new album to the database</string>
-    <string name="addSong">Add a new song to the database</string>
-    <string name="addGenre">Add a new genre to the database</string>
-    <string name="addArtist">Add a new artist to the database</string>
+    <!-- Title Strings -->
+    <string name="title_about">About musicDB</string>
+    <string name="title_albums">Your albums</string>
+    <string name="title_artists">Your artists</string>
+    <string name="title_songs">Your songs</string>
+    <string name="title_add_album">New album</string>
+    <string name="title_add_artist">New artist</string>
+    <string name="title_add_song">New song</string>
+    <string name="title_genre_selector">Your genres</string>
 
     <!-- Menu Strings -->
     <string name="menuHome">Home</string>
@@ -54,6 +58,7 @@
     </string-array>
 
     <!-- Music genres -->
+    <string name="genresLabel">Genres</string>
     <string-array name="genres">
         <item>Classic</item>
         <item>Country</item>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="my.music.musicdb">
 
     <application
@@ -8,7 +9,8 @@
         android:label="@string/appNameComplete"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,22 +18,32 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AllAlbumsActivity">
+        <activity android:name=".AllAlbumsActivity"
+            android:label="@string/title_albums">
 
         </activity>
-        <activity android:name=".AllArtistsActivity">
+        <activity android:name=".AllArtistsActivity"
+            android:label="@string/title_artists">
 
         </activity>
-        <activity android:name=".AllSongsActivity">
+        <activity android:name=".AllSongsActivity"
+            android:label="@string/title_songs">
 
         </activity>
-        <activity android:name=".AddAlbumActivity">
+        <activity android:name=".AllGenresActivity"
+            android:label="@string/title_genre_selector">
 
         </activity>
-        <activity android:name=".AddArtistActivity">
+        <activity android:name=".AddAlbumActivity"
+            android:label="@string/title_add_album">
 
         </activity>
-        <activity android:name=".AddSongActivity">
+        <activity android:name=".AddArtistActivity"
+            android:label="@string/title_add_artist">
+
+        </activity>
+        <activity android:name=".AddSongActivity"
+            android:label="@string/title_add_song">
 
         </activity>
     </application>

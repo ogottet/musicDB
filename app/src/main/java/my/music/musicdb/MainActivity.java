@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         TextView tw_albums = (TextView)findViewById(R.id.allAlbums);
         TextView tw_artists = (TextView)findViewById(R.id.allArtists);
         TextView tw_songs = (TextView)findViewById(R.id.allSongs);
+        TextView tw_genres = (TextView)findViewById(R.id.allGenres);
         tw_albums.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -41,6 +42,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, AllSongsActivity.class));
+            }
+        });
+        tw_genres.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, AllGenresActivity.class));
             }
         });
     }

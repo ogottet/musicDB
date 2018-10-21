@@ -20,6 +20,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
+        android:paddingTop="3dp"
         android:background="@color/Albums"
         android:stretchColumns="*"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -31,76 +32,28 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:padding="3dp">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_span="10"
-                android:gravity="center_vertical"
-                android:text="@string/listAlbums"
-                android:textAlignment="center"
-                android:textColor="@android:color/black"
-                android:textSize="20dp" />
-        </TableRow>
-        <View
-            android:layout_height="2dip"
-            android:background="@color/Albums" />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/black">
-
-            <TextView
-                android:id="@+id/l_album_artist"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_span="6"
                 android:layout_margin="1dp"
-                android:layout_span="3"
-                android:text="@string/songArtist"
-                android:textAlignment="viewEnd"
-                android:textColor="@color/Albums" />
-
-            <TextView
-                android:id="@+id/l_album_title"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_span="7"
+                android:background="@android:color/black"
                 android:text="@string/songTitle"
                 android:textAlignment="viewStart"
-                android:textColor="@color/Albums" />
-        </TableRow>
-        <View
-            android:layout_height="2dip"
-            android:background="@color/Albums" />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/black">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="1dp"
-                android:layout_span="3"
-                android:background="@color/Albums2"
-                android:text="@string/dummy"
-                android:textAlignment="viewEnd"
-                android:textColor="@android:color/black" />
-
+                android:textColor="@color/Albums2" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_span="4"
                 android:layout_margin="1dp"
-                android:layout_span="7"
-                android:background="@color/Albums2"
-                android:text="@string/dummy"
+                android:background="@android:color/black"
+                android:paddingLeft="3dp"
+                android:text="@string/songArtist"
                 android:textAlignment="viewStart"
-                android:textColor="@android:color/black" />
-
+                android:textColor="@color/Albums2" />
         </TableRow>
         <View
             android:layout_height="2dip"
@@ -108,28 +61,27 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/black">
-
+            android:background="@android:color/black"
+            android:padding="3dp">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_span="6"
                 android:layout_margin="1dp"
-                android:layout_span="3"
-                android:background="@color/Albums2"
-                android:text="@string/dummy"
-                android:textAlignment="viewEnd"
-                android:textColor="@android:color/black" />
-
+                android:background="@android:color/black"
+                android:text="@string/songTitle"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_span="4"
                 android:layout_margin="1dp"
-                android:layout_span="7"
-                android:background="@color/Albums2"
-                android:text="@string/dummy"
+                android:background="@android:color/black"
+                android:paddingLeft="3dp"
+                android:text="@string/songArtist"
                 android:textAlignment="viewStart"
-                android:textColor="@android:color/black" />
-
+                android:textColor="@color/Albums2" />
         </TableRow>
         <View
             android:layout_height="2dip"
@@ -137,28 +89,27 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/black">
-
+            android:background="@android:color/black"
+            android:padding="3dp">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_span="6"
                 android:layout_margin="1dp"
-                android:layout_span="3"
-                android:background="@color/Albums2"
-                android:text="@string/dummy"
-                android:textAlignment="viewEnd"
-                android:textColor="@android:color/black" />
-
+                android:background="@android:color/black"
+                android:text="@string/songTitle"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_span="4"
                 android:layout_margin="1dp"
-                android:layout_span="7"
-                android:background="@color/Albums2"
-                android:text="@string/dummy"
+                android:background="@android:color/black"
+                android:paddingLeft="3dp"
+                android:text="@string/songArtist"
                 android:textAlignment="viewStart"
-                android:textColor="@android:color/black" />
-
+                android:textColor="@color/Albums2" />
         </TableRow>
         <View
             android:layout_height="2dip"
@@ -166,28 +117,27 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/black">
-
+            android:background="@android:color/black"
+            android:padding="3dp">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_span="6"
                 android:layout_margin="1dp"
-                android:layout_span="3"
-                android:background="@color/Albums2"
-                android:text="@string/dummy"
-                android:textAlignment="viewEnd"
-                android:textColor="@android:color/black" />
-
+                android:background="@android:color/black"
+                android:text="@string/songTitle"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_span="4"
                 android:layout_margin="1dp"
-                android:layout_span="7"
-                android:background="@color/Albums2"
-                android:text="@string/dummy"
+                android:background="@android:color/black"
+                android:paddingLeft="3dp"
+                android:text="@string/songArtist"
                 android:textAlignment="viewStart"
-                android:textColor="@android:color/black" />
-
+                android:textColor="@color/Albums2" />
         </TableRow>
         <View
             android:layout_height="2dip"
@@ -195,28 +145,27 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/black">
-
+            android:background="@android:color/black"
+            android:padding="3dp">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_span="6"
                 android:layout_margin="1dp"
-                android:layout_span="3"
-                android:background="@color/Albums2"
-                android:text="@string/dummy"
-                android:textAlignment="viewEnd"
-                android:textColor="@android:color/black" />
-
+                android:background="@android:color/black"
+                android:text="@string/songTitle"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_span="4"
                 android:layout_margin="1dp"
-                android:layout_span="7"
-                android:background="@color/Albums2"
-                android:text="@string/dummy"
+                android:background="@android:color/black"
+                android:paddingLeft="3dp"
+                android:text="@string/songArtist"
                 android:textAlignment="viewStart"
-                android:textColor="@android:color/black" />
-
+                android:textColor="@color/Albums2" />
         </TableRow>
         <View
             android:layout_height="2dip"
@@ -224,28 +173,27 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/black">
-
+            android:background="@android:color/black"
+            android:padding="3dp">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_span="6"
                 android:layout_margin="1dp"
-                android:layout_span="3"
-                android:background="@color/Albums2"
-                android:text="@string/dummy"
-                android:textAlignment="viewEnd"
-                android:textColor="@android:color/black" />
-
+                android:background="@android:color/black"
+                android:text="@string/songTitle"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_span="4"
                 android:layout_margin="1dp"
-                android:layout_span="7"
-                android:background="@color/Albums2"
-                android:text="@string/dummy"
+                android:background="@android:color/black"
+                android:paddingLeft="3dp"
+                android:text="@string/songArtist"
                 android:textAlignment="viewStart"
-                android:textColor="@android:color/black" />
-
+                android:textColor="@color/Albums2" />
         </TableRow>
         <View
             android:layout_height="2dip"
@@ -253,28 +201,27 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/black">
-
+            android:background="@android:color/black"
+            android:padding="3dp">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_span="6"
                 android:layout_margin="1dp"
-                android:layout_span="3"
-                android:background="@color/Albums2"
-                android:text="@string/dummy"
-                android:textAlignment="viewEnd"
-                android:textColor="@android:color/black" />
-
+                android:background="@android:color/black"
+                android:text="@string/songTitle"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_span="4"
                 android:layout_margin="1dp"
-                android:layout_span="7"
-                android:background="@color/Albums2"
-                android:text="@string/dummy"
+                android:background="@android:color/black"
+                android:paddingLeft="3dp"
+                android:text="@string/songArtist"
                 android:textAlignment="viewStart"
-                android:textColor="@android:color/black" />
-
+                android:textColor="@color/Albums2" />
         </TableRow>
         <View
             android:layout_height="2dip"
@@ -282,28 +229,27 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/black">
-
+            android:background="@android:color/black"
+            android:padding="3dp">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_span="6"
                 android:layout_margin="1dp"
-                android:layout_span="3"
-                android:background="@color/Albums2"
-                android:text="@string/dummy"
-                android:textAlignment="viewEnd"
-                android:textColor="@android:color/black" />
-
+                android:background="@android:color/black"
+                android:text="@string/songTitle"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_span="4"
                 android:layout_margin="1dp"
-                android:layout_span="7"
-                android:background="@color/Albums2"
-                android:text="@string/dummy"
+                android:background="@android:color/black"
+                android:paddingLeft="3dp"
+                android:text="@string/songArtist"
                 android:textAlignment="viewStart"
-                android:textColor="@android:color/black" />
-
+                android:textColor="@color/Albums2" />
         </TableRow>
         <View
             android:layout_height="2dip"
@@ -311,28 +257,27 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/black">
-
+            android:background="@android:color/black"
+            android:padding="3dp">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_span="6"
                 android:layout_margin="1dp"
-                android:layout_span="3"
-                android:background="@color/Albums2"
-                android:text="@string/dummy"
-                android:textAlignment="viewEnd"
-                android:textColor="@android:color/black" />
-
+                android:background="@android:color/black"
+                android:text="@string/songTitle"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_span="4"
                 android:layout_margin="1dp"
-                android:layout_span="7"
-                android:background="@color/Albums2"
-                android:text="@string/dummy"
+                android:background="@android:color/black"
+                android:paddingLeft="3dp"
+                android:text="@string/songArtist"
                 android:textAlignment="viewStart"
-                android:textColor="@android:color/black" />
-
+                android:textColor="@color/Albums2" />
         </TableRow>
         <View
             android:layout_height="2dip"
@@ -340,28 +285,27 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/black">
-
+            android:background="@android:color/black"
+            android:padding="3dp">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_span="6"
                 android:layout_margin="1dp"
-                android:layout_span="3"
-                android:background="@color/Albums2"
-                android:text="@string/dummy"
-                android:textAlignment="viewEnd"
-                android:textColor="@android:color/black" />
-
+                android:background="@android:color/black"
+                android:text="@string/songTitle"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_span="4"
                 android:layout_margin="1dp"
-                android:layout_span="7"
-                android:background="@color/Albums2"
-                android:text="@string/dummy"
+                android:background="@android:color/black"
+                android:paddingLeft="3dp"
+                android:text="@string/songArtist"
                 android:textAlignment="viewStart"
-                android:textColor="@android:color/black" />
-
+                android:textColor="@color/Albums2" />
         </TableRow>
         <View
             android:layout_height="2dip"
@@ -369,28 +313,27 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/black">
-
+            android:background="@android:color/black"
+            android:padding="3dp">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_span="6"
                 android:layout_margin="1dp"
-                android:layout_span="3"
-                android:background="@color/Albums2"
-                android:text="@string/dummy"
-                android:textAlignment="viewEnd"
-                android:textColor="@android:color/black" />
-
+                android:background="@android:color/black"
+                android:text="@string/songTitle"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_span="4"
                 android:layout_margin="1dp"
-                android:layout_span="7"
-                android:background="@color/Albums2"
-                android:text="@string/dummy"
+                android:background="@android:color/black"
+                android:paddingLeft="3dp"
+                android:text="@string/songArtist"
                 android:textAlignment="viewStart"
-                android:textColor="@android:color/black" />
-
+                android:textColor="@color/Albums2" />
         </TableRow>
         <View
             android:layout_height="2dip"
@@ -398,28 +341,27 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/black">
-
+            android:background="@android:color/black"
+            android:padding="3dp">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_span="6"
                 android:layout_margin="1dp"
-                android:layout_span="3"
-                android:background="@color/Albums2"
-                android:text="@string/dummy"
-                android:textAlignment="viewEnd"
-                android:textColor="@android:color/black" />
-
+                android:background="@android:color/black"
+                android:text="@string/songTitle"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_span="4"
                 android:layout_margin="1dp"
-                android:layout_span="7"
-                android:background="@color/Albums2"
-                android:text="@string/dummy"
+                android:background="@android:color/black"
+                android:paddingLeft="3dp"
+                android:text="@string/songArtist"
                 android:textAlignment="viewStart"
-                android:textColor="@android:color/black" />
-
+                android:textColor="@color/Albums2" />
         </TableRow>
         <View
             android:layout_height="2dip"
@@ -427,28 +369,27 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/black">
-
+            android:background="@android:color/black"
+            android:padding="3dp">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_span="6"
                 android:layout_margin="1dp"
-                android:layout_span="3"
-                android:background="@color/Albums2"
-                android:text="@string/dummy"
-                android:textAlignment="viewEnd"
-                android:textColor="@android:color/black" />
-
+                android:background="@android:color/black"
+                android:text="@string/songTitle"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_span="4"
                 android:layout_margin="1dp"
-                android:layout_span="7"
-                android:background="@color/Albums2"
-                android:text="@string/dummy"
+                android:background="@android:color/black"
+                android:paddingLeft="3dp"
+                android:text="@string/songArtist"
                 android:textAlignment="viewStart"
-                android:textColor="@android:color/black" />
-
+                android:textColor="@color/Albums2" />
         </TableRow>
         <View
             android:layout_height="2dip"
@@ -456,28 +397,27 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/black">
-
+            android:background="@android:color/black"
+            android:padding="3dp">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_span="6"
                 android:layout_margin="1dp"
-                android:layout_span="3"
-                android:background="@color/Albums2"
-                android:text="@string/dummy"
-                android:textAlignment="viewEnd"
-                android:textColor="@android:color/black" />
-
+                android:background="@android:color/black"
+                android:text="@string/songTitle"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_span="4"
                 android:layout_margin="1dp"
-                android:layout_span="7"
-                android:background="@color/Albums2"
-                android:text="@string/dummy"
+                android:background="@android:color/black"
+                android:paddingLeft="3dp"
+                android:text="@string/songArtist"
                 android:textAlignment="viewStart"
-                android:textColor="@android:color/black" />
-
+                android:textColor="@color/Albums2" />
         </TableRow>
         <View
             android:layout_height="2dip"
@@ -485,28 +425,419 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/black">
-
+            android:background="@android:color/black"
+            android:padding="3dp">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_span="6"
                 android:layout_margin="1dp"
-                android:layout_span="3"
-                android:background="@color/Albums2"
-                android:text="@string/dummy"
-                android:textAlignment="viewEnd"
-                android:textColor="@android:color/black" />
-
+                android:background="@android:color/black"
+                android:text="@string/songTitle"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_span="4"
                 android:layout_margin="1dp"
-                android:layout_span="7"
-                android:background="@color/Albums2"
-                android:text="@string/dummy"
+                android:background="@android:color/black"
+                android:paddingLeft="3dp"
+                android:text="@string/songArtist"
                 android:textAlignment="viewStart"
-                android:textColor="@android:color/black" />
-
+                android:textColor="@color/Albums2" />
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="@color/Albums" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:padding="3dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="6"
+                android:layout_margin="1dp"
+                android:background="@android:color/black"
+                android:text="@string/songTitle"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="4"
+                android:layout_margin="1dp"
+                android:background="@android:color/black"
+                android:paddingLeft="3dp"
+                android:text="@string/songArtist"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="@color/Albums" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:padding="3dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="6"
+                android:layout_margin="1dp"
+                android:background="@android:color/black"
+                android:text="@string/songTitle"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="4"
+                android:layout_margin="1dp"
+                android:background="@android:color/black"
+                android:paddingLeft="3dp"
+                android:text="@string/songArtist"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="@color/Albums" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:padding="3dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="6"
+                android:layout_margin="1dp"
+                android:background="@android:color/black"
+                android:text="@string/songTitle"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="4"
+                android:layout_margin="1dp"
+                android:background="@android:color/black"
+                android:paddingLeft="3dp"
+                android:text="@string/songArtist"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="@color/Albums" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:padding="3dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="6"
+                android:layout_margin="1dp"
+                android:background="@android:color/black"
+                android:text="@string/songTitle"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="4"
+                android:layout_margin="1dp"
+                android:background="@android:color/black"
+                android:paddingLeft="3dp"
+                android:text="@string/songArtist"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="@color/Albums" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:padding="3dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="6"
+                android:layout_margin="1dp"
+                android:background="@android:color/black"
+                android:text="@string/songTitle"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="4"
+                android:layout_margin="1dp"
+                android:background="@android:color/black"
+                android:paddingLeft="3dp"
+                android:text="@string/songArtist"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="@color/Albums" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:padding="3dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="6"
+                android:layout_margin="1dp"
+                android:background="@android:color/black"
+                android:text="@string/songTitle"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="4"
+                android:layout_margin="1dp"
+                android:background="@android:color/black"
+                android:paddingLeft="3dp"
+                android:text="@string/songArtist"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="@color/Albums" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:padding="3dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="6"
+                android:layout_margin="1dp"
+                android:background="@android:color/black"
+                android:text="@string/songTitle"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="4"
+                android:layout_margin="1dp"
+                android:background="@android:color/black"
+                android:paddingLeft="3dp"
+                android:text="@string/songArtist"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="@color/Albums" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:padding="3dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="6"
+                android:layout_margin="1dp"
+                android:background="@android:color/black"
+                android:text="@string/songTitle"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="4"
+                android:layout_margin="1dp"
+                android:background="@android:color/black"
+                android:paddingLeft="3dp"
+                android:text="@string/songArtist"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="@color/Albums" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:padding="3dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="6"
+                android:layout_margin="1dp"
+                android:background="@android:color/black"
+                android:text="@string/songTitle"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="4"
+                android:layout_margin="1dp"
+                android:background="@android:color/black"
+                android:paddingLeft="3dp"
+                android:text="@string/songArtist"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="@color/Albums" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:padding="3dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="6"
+                android:layout_margin="1dp"
+                android:background="@android:color/black"
+                android:text="@string/songTitle"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="4"
+                android:layout_margin="1dp"
+                android:background="@android:color/black"
+                android:paddingLeft="3dp"
+                android:text="@string/songArtist"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="@color/Albums" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:padding="3dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="6"
+                android:layout_margin="1dp"
+                android:background="@android:color/black"
+                android:text="@string/songTitle"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="4"
+                android:layout_margin="1dp"
+                android:background="@android:color/black"
+                android:paddingLeft="3dp"
+                android:text="@string/songArtist"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="@color/Albums" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:padding="3dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="6"
+                android:layout_margin="1dp"
+                android:background="@android:color/black"
+                android:text="@string/songTitle"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="4"
+                android:layout_margin="1dp"
+                android:background="@android:color/black"
+                android:paddingLeft="3dp"
+                android:text="@string/songArtist"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="@color/Albums" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:padding="3dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="6"
+                android:layout_margin="1dp"
+                android:background="@android:color/black"
+                android:text="@string/songTitle"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="4"
+                android:layout_margin="1dp"
+                android:background="@android:color/black"
+                android:paddingLeft="3dp"
+                android:text="@string/songArtist"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="@color/Albums" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:padding="3dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="6"
+                android:layout_margin="1dp"
+                android:background="@android:color/black"
+                android:text="@string/songTitle"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="4"
+                android:layout_margin="1dp"
+                android:background="@android:color/black"
+                android:paddingLeft="3dp"
+                android:text="@string/songArtist"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Albums2" />
         </TableRow>
         <View
             android:layout_height="2dip"

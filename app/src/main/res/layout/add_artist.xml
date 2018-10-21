@@ -34,7 +34,7 @@
                 android:layout_column="1"
                 android:gravity="center_vertical"
                 android:padding="3dip"
-                android:text="@string/addArtist"
+                android:text="@string/title_add_artist"
                 android:textAlignment="center"
                 android:textColor="@android:color/holo_orange_light"
                 android:textSize="20dp" />
