@@ -17,6 +17,7 @@ public class AllArtistsActivity extends AppCompatActivity {
         setContentView(R.layout.artists);
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
+        getSupportActionBar().setIcon(R.drawable.logo);
     }
 
     @Override

@@ -39,6 +39,7 @@ public class AddArtistActivity extends AppCompatActivity {
         setContentView(R.layout.add_artist);
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
+        getSupportActionBar().setIcon(R.drawable.logo);
         btn = (Button) findViewById(R.id.btn);
         imageview = (ImageView) findViewById(R.id.iv);
         btn.setOnClickListener(new View.OnClickListener() {

@@ -17,6 +17,7 @@ public class AllSongsActivity extends AppCompatActivity {
         setContentView(R.layout.songs);
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
+        getSupportActionBar().setIcon(R.drawable.logo);
     }
 
     @Override

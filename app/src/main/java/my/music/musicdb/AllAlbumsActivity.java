@@ -17,6 +17,7 @@ public class AllAlbumsActivity extends AppCompatActivity {
         setContentView(R.layout.albums);
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
+        getSupportActionBar().setIcon(R.drawable.logo);
     }
 
     @Override

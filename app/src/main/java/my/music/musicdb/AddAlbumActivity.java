@@ -19,6 +19,7 @@ public class AddAlbumActivity extends AppCompatActivity {
         setContentView(R.layout.add_album);
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
+        getSupportActionBar().setIcon(R.drawable.logo);
         Button btn_add_artist = (Button)findViewById(R.id.albumAddArtist);
         btn_add_artist.setOnClickListener(new View.OnClickListener(){
             @Override
