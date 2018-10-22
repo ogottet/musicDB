@@ -24,14 +24,12 @@
         android:layout_weight="1">
 
     <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/tableLayout3"
+        android:id="@+id/tableLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
         android:paddingTop="3dp"
-        android:background="@color/Genres"
+        android:background="@android:color/black"
         android:stretchColumns="*"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,758 +42,801 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:background="@android:color/black">
+            android:background="@color/Genres">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_span="10"
-                android:background="@android:color/black"
                 android:text="@string/dummy"
                 android:textAlignment="center"
-                android:textColor="@color/Genres2" />
+                android:textColor="@android:color/black" />
         </TableRow>
         <View
             android:layout_height="2dip"
-            android:background="@color/Genres" />
+            android:background="@android:color/black" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:background="@color/Genres">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_span="10"
+                android:text="@string/dummy"
+                android:textAlignment="center"
+                android:textColor="@android:color/black" />
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="@android:color/black" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:background="@color/Genres">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_span="10"
+                android:text="@string/dummy"
+                android:textAlignment="center"
+                android:textColor="@android:color/black" />
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="@android:color/black" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:background="@color/Genres">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_span="10"
+                android:text="@string/dummy"
+                android:textAlignment="center"
+                android:textColor="@android:color/black" />
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="@android:color/black" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:background="@color/Genres">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_span="10"
+                android:text="@string/dummy"
+                android:textAlignment="center"
+                android:textColor="@android:color/black" />
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="@android:color/black" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:background="@color/Genres">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_span="10"
+                android:text="@string/dummy"
+                android:textAlignment="center"
+                android:textColor="@android:color/black" />
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="@android:color/black" />
     </TableLayout>
 
     </ScrollView>
