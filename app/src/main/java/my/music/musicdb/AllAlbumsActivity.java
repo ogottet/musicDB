@@ -3,6 +3,7 @@ package my.music.musicdb;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
@@ -14,6 +15,8 @@ public class AllAlbumsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.albums);
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        setSupportActionBar(myToolbar);
     }
 
     @Override
@@ -32,8 +35,16 @@ public class AllAlbumsActivity extends AppCompatActivity {
                 intent = new Intent(this, MainActivity.class);
                 this.startActivity(intent);
                 return true;
+            case R.id.add_artist:
+                intent = new Intent(this, AddArtistActivity.class);
+                this.startActivity(intent);
+                return true;
             case R.id.add_album:
                 intent = new Intent(this, AddAlbumActivity.class);
+                this.startActivity(intent);
+                return true;
+            case R.id.add_song:
+                intent = new Intent(this, AddSongActivity.class);
                 this.startActivity(intent);
                 return true;
             default:

@@ -2,7 +2,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
     <item
-        android:id="@+id/add_album" android:icon="@drawable/add" app:showAsAction="always" android:title="@string/menuHome"/>
+        android:id="@+id/add_album" android:icon="@drawable/add" app:showAsAction="always" android:title="@string/title_add_album"/>
     <item
         android:id="@+id/go_home" android:icon="@drawable/home" app:showAsAction="ifRoom" android:title="@string/menuHome"/>
     <item

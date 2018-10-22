@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        setSupportActionBar(myToolbar);
         TextView tw_albums = (TextView)findViewById(R.id.allAlbums);
         TextView tw_artists = (TextView)findViewById(R.id.allArtists);
         TextView tw_songs = (TextView)findViewById(R.id.allSongs);

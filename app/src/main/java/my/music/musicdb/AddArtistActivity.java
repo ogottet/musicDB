@@ -11,6 +11,7 @@ import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -36,9 +37,10 @@ public class AddArtistActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_artist);
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        setSupportActionBar(myToolbar);
         btn = (Button) findViewById(R.id.btn);
         imageview = (ImageView) findViewById(R.id.iv);
-
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -50,7 +52,7 @@ public class AddArtistActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_home, menu);
+        getMenuInflater().inflate(R.menu.menu_add_artist, menu);
         return true;
     }
 
@@ -60,6 +62,18 @@ public class AddArtistActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.go_home:
                 Intent intent = new Intent(this, MainActivity.class);
+                this.startActivity(intent);
+                return true;
+            case R.id.add_artist:
+                intent = new Intent(this, AddArtistActivity.class);
+                this.startActivity(intent);
+                return true;
+            case R.id.add_album:
+                intent = new Intent(this, AddAlbumActivity.class);
+                this.startActivity(intent);
+                return true;
+            case R.id.add_song:
+                intent = new Intent(this, AddSongActivity.class);
                 this.startActivity(intent);
                 return true;
             default:

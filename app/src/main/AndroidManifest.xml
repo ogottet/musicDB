@@ -13,7 +13,7 @@
         android:label="@string/appNameComplete"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:ignore="GoogleAppIndexingWarning">
 
         <activity android:name=".MainActivity">
@@ -49,11 +49,6 @@
         </activity>
         <activity android:name=".AddArtistActivity"
             android:label="@string/title_add_artist">
-
-        </activity>
-        <activity android:name=".AddArtistActivityFromAlbum"
-            android:label="@string/title_add_artist"
-            android:parentActivityName=".AddAlbumActivity">
 
         </activity>
         <activity android:name=".AddSongActivity"

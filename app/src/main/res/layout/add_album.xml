@@ -7,15 +7,20 @@
     android:background="@android:color/black"
     tools:context="my.music.musicdb.AddAlbumActivity">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/Base.Theme.AppCompat"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.ActionBar"/>
+
     <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/tableLayout3"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_margin="8dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="?attr/actionBarSize"
         android:background="@color/Albums"
         android:gravity="fill_vertical|fill_horizontal"
         android:stretchColumns="*"

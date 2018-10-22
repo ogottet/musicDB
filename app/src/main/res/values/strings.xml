@@ -1,7 +1,7 @@
 <resources>
     <!-- Global Strings -->
     <string name="appNameShort">musicDB</string>
-    <string name="appNameComplete">musicDB - my personal music db</string>
+    <string name="appNameComplete">musicDB - your personal music db</string>
 
     <!-- Title Strings -->
     <string name="title_about">About musicDB</string>
