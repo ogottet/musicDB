@@ -4,6 +4,8 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.media.MediaScannerConnection;
 import android.net.Uri;
 import android.os.Bundle;
@@ -31,7 +33,7 @@ public class AddArtistActivity extends AppCompatActivity {
     private Button btn;
     private ImageView imageview;
     private static final String IMAGE_DIRECTORY = "/user/pictures/artists";
-    private int GALLERY = 1, CAMERA = 2;
+    private int GALLERY = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +42,7 @@ public class AddArtistActivity extends AppCompatActivity {
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
         getSupportActionBar().setIcon(R.drawable.logo);
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#f57f17")));
         btn = (Button) findViewById(R.id.btn);
         imageview = (ImageView) findViewById(R.id.iv);
         btn.setOnClickListener(new View.OnClickListener() {

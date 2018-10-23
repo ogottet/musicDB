@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/black"
+    android:background="@color/Albums"
     tools:context="my.music.musicdb.AddAlbumActivity">
-
     <android.support.v7.widget.Toolbar
         android:id="@+id/my_toolbar"
         android:layout_width="match_parent"
@@ -15,13 +14,13 @@
         android:elevation="4dp"
         android:theme="@style/Base.Theme.AppCompat"
         app:popupTheme="@style/ThemeOverlay.AppCompat.ActionBar" />
-
     <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/tableLayout3"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="?attr/actionBarSize"
-        android:background="@color/Albums"
+        android:theme="@style/Base.Theme.AppCompat"
+        android:background="?attr/colorPrimary"
         android:gravity="fill_vertical|fill_horizontal"
         android:stretchColumns="*"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -30,10 +29,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
-
         <TableRow android:layout_weight="1"
             android:gravity="center">
-
             <TextView
                 android:id="@+id/l_edit_title"
                 android:layout_width="100dp"
@@ -43,8 +40,7 @@
                 android:layout_margin="6dp"
                 android:padding="3dp"
                 android:textAlignment="textEnd"
-                android:textColor="@android:color/black" />
-
+                android:textColor="@color/Albums" />
             <EditText
                 android:id="@+id/tf_edit_title"
                 android:layout_width="wrap_content"
@@ -56,16 +52,9 @@
                 android:ems="10"
                 android:inputType="text"
                 android:textColor="@android:color/black" />
-
         </TableRow>
-
-        <View
-            android:layout_height="2dip"
-            android:background="@color/Albums" />
-
         <TableRow android:layout_weight="1"
             android:gravity="center">
-
             <TextView
                 android:id="@+id/l_edit_release"
                 android:layout_width="100dp"
@@ -75,8 +64,7 @@
                 android:layout_margin="6dp"
                 android:padding="3dp"
                 android:textAlignment="textEnd"
-                android:textColor="@android:color/black" />
-
+                android:textColor="@color/Albums" />
             <EditText
                 android:id="@+id/tf_edit_release"
                 android:layout_width="wrap_content"
@@ -88,16 +76,9 @@
                 android:ems="10"
                 android:inputType="date"
                 android:textColor="@android:color/black" />
-
         </TableRow>
-
-        <View
-            android:layout_height="2dip"
-            android:background="@color/Albums" />
-
         <TableRow android:layout_weight="1"
             android:gravity="center">
-
             <TextView
                 android:id="@+id/l_edit_cover"
                 android:layout_width="100dp"
@@ -107,8 +88,7 @@
                 android:layout_margin="6dp"
                 android:padding="3dp"
                 android:textAlignment="textEnd"
-                android:textColor="@android:color/black" />
-
+                android:textColor="@color/Albums" />
             <EditText
                 android:id="@+id/tf_edit_cover"
                 android:layout_width="wrap_content"
@@ -120,17 +100,10 @@
                 android:ems="10"
                 android:inputType="text"
                 android:textColor="@android:color/black" />
-
         </TableRow>
-
-        <View
-            android:layout_height="2dip"
-            android:background="@color/Albums" />
-
         <TableRow
             android:layout_weight="1"
             android:gravity="center">
-
             <TextView
                 android:id="@+id/l_edit_price"
                 android:layout_width="100dp"
@@ -140,8 +113,7 @@
                 android:layout_margin="6dp"
                 android:padding="3dp"
                 android:textAlignment="textEnd"
-                android:textColor="@android:color/black" />
-
+                android:textColor="@color/Albums" />
             <EditText
                 android:id="@+id/tf_edit_price"
                 android:layout_width="wrap_content"
@@ -153,16 +125,9 @@
                 android:inputType="numberDecimal"
                 android:padding="3dp"
                 android:textColor="@android:color/black" />
-
         </TableRow>
-
-        <View
-            android:layout_height="2dip"
-            android:background="@color/Albums" />
-
         <TableRow android:layout_weight="1"
             android:gravity="center">
-
             <TextView
                 android:id="@+id/l_edit_language"
                 android:layout_width="100dp"
@@ -172,27 +137,21 @@
                 android:layout_margin="6dp"
                 android:padding="3dp"
                 android:textAlignment="textEnd"
-                android:textColor="@android:color/black" />
+                android:textColor="@color/Albums" />
 
             <Spinner
                 android:id="@+id/s_language"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_span="6"
                 android:layout_margin="6dp"
-                android:padding="3dp"
+                android:layout_span="6"
                 android:background="@drawable/edit_text_background"
-                android:entries="@array/language_names" />
-
+                android:entries="@array/language_names"
+                android:padding="3dp"
+                android:textColor="@android:color/black" />
         </TableRow>
-
-        <View
-            android:layout_height="2dip"
-            android:background="@color/Albums" />
-
         <TableRow android:layout_weight="1"
             android:gravity="center">
-
             <TextView
                 android:id="@+id/l_edit_artist"
                 android:layout_width="100dp"
@@ -202,8 +161,7 @@
                 android:layout_margin="6dp"
                 android:padding="3dp"
                 android:textAlignment="textEnd"
-                android:textColor="@android:color/black" />
-
+                android:textColor="@color/Albums" />
             <Spinner
                 android:id="@+id/s_artist"
                 android:layout_width="match_parent"
@@ -212,22 +170,15 @@
                 android:layout_span="5"
                 android:background="@drawable/edit_text_background"
                 android:entries="@array/artists"
-                android:padding="3dp" />
-
+                android:padding="3dp"
+                android:textColor="@android:color/black" />
             <Button
                 android:id="@+id/albumAddArtist"
                 android:layout_span="1"
                 android:text="+" />
-
         </TableRow>
-
-        <View
-            android:layout_height="2dip"
-            android:background="@color/Albums" />
-
         <TableRow android:layout_weight="1"
             android:gravity="center">
-
             <TextView
                 android:id="@+id/l_edit_genre"
                 android:layout_width="100dp"
@@ -237,8 +188,7 @@
                 android:layout_margin="6dp"
                 android:padding="3dp"
                 android:textAlignment="textEnd"
-                android:textColor="@android:color/black" />
-
+                android:textColor="@color/Albums" />
             <Spinner
                 android:id="@+id/s_genre"
                 android:layout_width="match_parent"
@@ -247,13 +197,42 @@
                 android:layout_margin="6dp"
                 android:padding="3dp"
                 android:background="@drawable/edit_text_background"
-                android:entries="@array/genres" />
-
+                android:entries="@array/genres"
+                android:textColor="@android:color/black" />
         </TableRow>
-
+        <TableRow
+            android:layout_weight="2"
+            android:gravity="center_vertical">
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="10"
+                android:gravity="center_horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <TableRow android:gravity="center_vertical|center_horizontal">
+                    <Button
+                        android:id="@+id/btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/btnImage"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </TableRow>
+                <TableRow android:gravity="center_vertical|center_horizontal">
+                    <ImageView
+                        android:id="@+id/iv"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY" />
+                </TableRow>
+            </TableLayout>
+        </TableRow>
         <TableRow android:layout_weight="1"
             android:gravity="center">
-
             <Button
                 android:id="@+id/button"
                 android:layout_width="0dp"
@@ -263,10 +242,6 @@
                 android:layout_span="10"
                 android:text="@string/btnSave" />
         </TableRow>
-
-        <View
-            android:layout_height="2dip"
-            android:background="@color/Albums" />
     </TableLayout>
 
 </android.support.constraint.ConstraintLayout>
