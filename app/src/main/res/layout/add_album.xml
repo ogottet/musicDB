@@ -51,7 +51,7 @@
                 android:background="@drawable/edit_text_background"
                 android:ems="10"
                 android:inputType="text"
-                android:textColor="@android:color/black" />
+                android:textColor="@color/borderColor" />
         </TableRow>
         <TableRow android:layout_weight="1"
             android:gravity="center">
@@ -75,31 +75,7 @@
                 android:background="@drawable/edit_text_background"
                 android:ems="10"
                 android:inputType="date"
-                android:textColor="@android:color/black" />
-        </TableRow>
-        <TableRow android:layout_weight="1"
-            android:gravity="center">
-            <TextView
-                android:id="@+id/l_edit_cover"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_span="4"
-                android:text="@string/albumCover"
-                android:layout_margin="6dp"
-                android:padding="3dp"
-                android:textAlignment="textEnd"
-                android:textColor="@color/Albums" />
-            <EditText
-                android:id="@+id/tf_edit_cover"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_span="6"
-                android:layout_margin="6dp"
-                android:padding="3dp"
-                android:background="@drawable/edit_text_background"
-                android:ems="10"
-                android:inputType="text"
-                android:textColor="@android:color/black" />
+                android:textColor="@color/borderColor" />
         </TableRow>
         <TableRow
             android:layout_weight="1"
@@ -124,7 +100,7 @@
                 android:ems="10"
                 android:inputType="numberDecimal"
                 android:padding="3dp"
-                android:textColor="@android:color/black" />
+                android:textColor="@color/borderColor" />
         </TableRow>
         <TableRow android:layout_weight="1"
             android:gravity="center">
@@ -148,7 +124,7 @@
                 android:background="@drawable/edit_text_background"
                 android:entries="@array/language_names"
                 android:padding="3dp"
-                android:textColor="@android:color/black" />
+                android:textColor="@color/borderColor" />
         </TableRow>
         <TableRow android:layout_weight="1"
             android:gravity="center">
@@ -171,7 +147,7 @@
                 android:background="@drawable/edit_text_background"
                 android:entries="@array/artists"
                 android:padding="3dp"
-                android:textColor="@android:color/black" />
+                android:textColor="@color/borderColor" />
             <Button
                 android:id="@+id/albumAddArtist"
                 android:layout_span="1"
@@ -198,7 +174,7 @@
                 android:padding="3dp"
                 android:background="@drawable/edit_text_background"
                 android:entries="@array/genres"
-                android:textColor="@android:color/black" />
+                android:textColor="@color/borderColor" />
         </TableRow>
         <TableRow
             android:layout_weight="2"
