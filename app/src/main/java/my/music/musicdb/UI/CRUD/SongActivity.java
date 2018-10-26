@@ -1,4 +1,4 @@
-package my.music.musicdb;
+package my.music.musicdb.UI.CRUD;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -12,7 +12,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class AddSongActivity extends AppCompatActivity {
+import my.music.musicdb.MainActivity;
+import my.music.musicdb.R;
+
+public class SongActivity extends AppCompatActivity {
 
     TextView count;
     @Override
@@ -27,14 +30,14 @@ public class AddSongActivity extends AppCompatActivity {
         btn_add_artist.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(AddSongActivity.this, AddArtistActivity.class));
+                startActivity(new Intent(SongActivity.this, ArtistActivity.class));
             }
         });
         Button btn_add_album = (Button)findViewById(R.id.albumAddAlbum);
         btn_add_album.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(AddSongActivity.this, AddAlbumActivity.class));
+                startActivity(new Intent(SongActivity.this, AlbumActivity.class));
             }
         });
     }
@@ -55,11 +58,11 @@ public class AddSongActivity extends AppCompatActivity {
                 this.startActivity(intent);
                 return true;
             case R.id.add_artist:
-                intent = new Intent(this, AddArtistActivity.class);
+                intent = new Intent(this, ArtistActivity.class);
                 this.startActivity(intent);
                 return true;
             case R.id.add_album:
-                intent = new Intent(this, AddAlbumActivity.class);
+                intent = new Intent(this, AlbumActivity.class);
                 this.startActivity(intent);
                 return true;
             default:

@@ -1,4 +1,4 @@
-package my.music.musicdb;
+package my.music.musicdb.UI.CRUD;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -17,7 +17,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.ByteArrayOutputStream;
@@ -26,27 +25,23 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Calendar;
 
-public class AddAlbumActivity extends AppCompatActivity {
+import my.music.musicdb.MainActivity;
+import my.music.musicdb.R;
+
+public class ArtistActivity extends AppCompatActivity {
     private Button btn;
     private ImageView imageview;
-    private static final String IMAGE_DIRECTORY = "/user/pictures/albums";
+    private static final String IMAGE_DIRECTORY = "/user/pictures/artists";
     private int GALLERY = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.add_album);
+        setContentView(R.layout.add_artist);
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
         getSupportActionBar().setIcon(R.drawable.logo);
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#6f9c3a")));
-        Button btn_add_artist = (Button)findViewById(R.id.albumAddArtist);
-        btn_add_artist.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(AddAlbumActivity.this, AddArtistActivity.class));
-            }
-        });
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#f57f17")));
         btn = (Button) findViewById(R.id.btn);
         imageview = (ImageView) findViewById(R.id.iv);
         btn.setOnClickListener(new View.OnClickListener() {
@@ -60,29 +55,28 @@ public class AddAlbumActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_add_album, menu);
+        getMenuInflater().inflate(R.menu.menu_add_artist, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle item selection
-        Intent intent;
         switch (item.getItemId()) {
             case R.id.go_home:
-                intent = new Intent(this, MainActivity.class);
-                this.startActivity(intent);
-                return true;
-            case R.id.add_album:
-                intent = new Intent(this, AddAlbumActivity.class);
+                Intent intent = new Intent(this, MainActivity.class);
                 this.startActivity(intent);
                 return true;
             case R.id.add_artist:
-                intent = new Intent(this, AddArtistActivity.class);
+                intent = new Intent(this, ArtistActivity.class);
+                this.startActivity(intent);
+                return true;
+            case R.id.add_album:
+                intent = new Intent(this, AlbumActivity.class);
                 this.startActivity(intent);
                 return true;
             case R.id.add_song:
-                intent = new Intent(this, AddSongActivity.class);
+                intent = new Intent(this, SongActivity.class);
                 this.startActivity(intent);
                 return true;
             default:
@@ -110,12 +104,12 @@ public class AddAlbumActivity extends AppCompatActivity {
                 try {
                     Bitmap bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), contentURI);
                     String path = saveImage(bitmap);
-                    Toast.makeText(AddAlbumActivity.this, "Image Saved!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ArtistActivity.this, "Image Saved!", Toast.LENGTH_SHORT).show();
                     imageview.setImageBitmap(bitmap);
 
                 } catch (IOException e) {
                     e.printStackTrace();
-                    Toast.makeText(AddAlbumActivity.this, "Failed!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ArtistActivity.this, "Failed!", Toast.LENGTH_SHORT).show();
                 }
             }
 

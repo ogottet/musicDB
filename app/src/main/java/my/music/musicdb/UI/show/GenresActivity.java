@@ -1,4 +1,4 @@
-package my.music.musicdb;
+package my.music.musicdb.UI.show;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,13 +8,19 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-public class AllArtistsActivity extends AppCompatActivity {
+import my.music.musicdb.MainActivity;
+import my.music.musicdb.R;
+import my.music.musicdb.UI.show.AlbumsActivity;
+import my.music.musicdb.UI.show.ArtistsActivity;
+import my.music.musicdb.UI.show.SongsActivity;
+
+public class GenresActivity extends AppCompatActivity {
 
     TextView count;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.artists);
+        setContentView(R.layout.genres);
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
         getSupportActionBar().setIcon(R.drawable.logo);
@@ -23,7 +29,7 @@ public class AllArtistsActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_artist, menu);
+        getMenuInflater().inflate(R.menu.menu_genres, menu);
         return true;
     }
 
@@ -36,15 +42,15 @@ public class AllArtistsActivity extends AppCompatActivity {
                 this.startActivity(intent);
                 return true;
             case R.id.add_artist:
-                intent = new Intent(this, AddArtistActivity.class);
+                intent = new Intent(this, my.music.musicdb.UI.CRUD.ArtistActivity.class);
                 this.startActivity(intent);
                 return true;
             case R.id.add_album:
-                intent = new Intent(this, AddAlbumActivity.class);
+                intent = new Intent(this, my.music.musicdb.UI.CRUD.AlbumActivity.class);
                 this.startActivity(intent);
                 return true;
             case R.id.add_song:
-                intent = new Intent(this, AddSongActivity.class);
+                intent = new Intent(this, my.music.musicdb.UI.CRUD.SongActivity.class);
                 this.startActivity(intent);
                 return true;
             default:

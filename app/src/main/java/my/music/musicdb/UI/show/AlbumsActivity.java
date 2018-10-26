@@ -1,4 +1,4 @@
-package my.music.musicdb;
+package my.music.musicdb.UI.show;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,7 +8,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-public class AllAlbumsActivity extends AppCompatActivity {
+import my.music.musicdb.MainActivity;
+import my.music.musicdb.R;
+import my.music.musicdb.UI.show.AlbumsActivity;
+import my.music.musicdb.UI.show.ArtistsActivity;
+import my.music.musicdb.UI.show.SongsActivity;
+
+public class AlbumsActivity extends AppCompatActivity {
 
     TextView count;
     @Override
@@ -37,15 +43,15 @@ public class AllAlbumsActivity extends AppCompatActivity {
                 this.startActivity(intent);
                 return true;
             case R.id.add_artist:
-                intent = new Intent(this, AddArtistActivity.class);
+                intent = new Intent(this, my.music.musicdb.UI.CRUD.ArtistActivity.class);
                 this.startActivity(intent);
                 return true;
             case R.id.add_album:
-                intent = new Intent(this, AddAlbumActivity.class);
+                intent = new Intent(this, my.music.musicdb.UI.CRUD.AlbumActivity.class);
                 this.startActivity(intent);
                 return true;
             case R.id.add_song:
-                intent = new Intent(this, AddSongActivity.class);
+                intent = new Intent(this, my.music.musicdb.UI.CRUD.SongActivity.class);
                 this.startActivity(intent);
                 return true;
             default:
