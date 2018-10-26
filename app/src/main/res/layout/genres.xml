@@ -5,7 +5,7 @@
     android:background="@color/Genres"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="my.music.musicdb.AllGenresActivity">
+    tools:context="my.music.musicdb.UI.show.GenresActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/my_toolbar"

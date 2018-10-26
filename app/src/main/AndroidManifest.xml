@@ -23,35 +23,35 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AllAlbumsActivity"
+        <activity android:name="my.music.musicdb.UI.show.AlbumsActivity"
             android:label="@string/title_albums"
             android:parentActivityName=".MainActivity">
 
         </activity>
-        <activity android:name=".AllArtistsActivity"
+        <activity android:name="my.music.musicdb.UI.show.ArtistsActivity"
             android:label="@string/title_artists"
             android:parentActivityName=".MainActivity">
 
         </activity>
-        <activity android:name=".AllSongsActivity"
+        <activity android:name="my.music.musicdb.UI.show.SongsActivity"
             android:label="@string/title_songs"
             android:parentActivityName=".MainActivity">
 
         </activity>
-        <activity android:name=".AllGenresActivity"
+        <activity android:name="my.music.musicdb.UI.show.GenresActivity"
             android:label="@string/title_genre_selector"
             android:parentActivityName=".MainActivity">
 
         </activity>
-        <activity android:name=".AddAlbumActivity"
+        <activity android:name="my.music.musicdb.UI.CRUD.AlbumActivity"
             android:label="@string/title_add_album">
 
         </activity>
-        <activity android:name=".AddArtistActivity"
+        <activity android:name="my.music.musicdb.UI.CRUD.ArtistActivity"
             android:label="@string/title_add_artist">
 
         </activity>
-        <activity android:name=".AddSongActivity"
+        <activity android:name="my.music.musicdb.UI.CRUD.SongActivity"
             android:label="@string/title_add_song">
 
         </activity>

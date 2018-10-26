@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/Albums"
-    tools:context="my.music.musicdb.AddAlbumActivity">
+    tools:context="my.music.musicdb.UI.CRUD.AlbumActivity">
     <android.support.v7.widget.Toolbar
         android:id="@+id/my_toolbar"
         android:layout_width="match_parent"

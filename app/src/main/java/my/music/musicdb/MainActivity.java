@@ -2,18 +2,20 @@ package my.music.musicdb;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import org.w3c.dom.Text;
+import my.music.musicdb.UI.CRUD.AlbumActivity;
+import my.music.musicdb.UI.CRUD.ArtistActivity;
+import my.music.musicdb.UI.CRUD.SongActivity;
+import my.music.musicdb.UI.show.AlbumsActivity;
+import my.music.musicdb.UI.show.ArtistsActivity;
+import my.music.musicdb.UI.show.GenresActivity;
+import my.music.musicdb.UI.show.SongsActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,25 +34,25 @@ public class MainActivity extends AppCompatActivity {
         tw_albums.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, AllAlbumsActivity.class));
+                startActivity(new Intent(MainActivity.this, my.music.musicdb.UI.show.AlbumsActivity.class));
             }
         });
         tw_artists.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, AllArtistsActivity.class));
+                startActivity(new Intent(MainActivity.this, my.music.musicdb.UI.show.ArtistsActivity.class));
             }
         });
         tw_songs.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, AllSongsActivity.class));
+                startActivity(new Intent(MainActivity.this, my.music.musicdb.UI.show.SongsActivity.class));
             }
         });
         tw_genres.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, AllGenresActivity.class));
+                startActivity(new Intent(MainActivity.this, my.music.musicdb.UI.show.GenresActivity.class));
             }
         });
     }
@@ -68,15 +70,15 @@ public class MainActivity extends AppCompatActivity {
         Intent intent;
         switch (item.getItemId()) {
             case R.id.add_album:
-                intent = new Intent(this, AddAlbumActivity.class);
+                intent = new Intent(this, AlbumActivity.class);
                 this.startActivity(intent);
                 return true;
             case R.id.add_artist:
-                intent = new Intent(this, AddArtistActivity.class);
+                intent = new Intent(this, ArtistActivity.class);
                 this.startActivity(intent);
                 return true;
             case R.id.add_song:
-                intent = new Intent(this, AddSongActivity.class);
+                intent = new Intent(this, SongActivity.class);
                 this.startActivity(intent);
                 return true;
             default:
